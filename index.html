@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir de vacances - Mathématiques (4ème vers la 3ème)</title>
+    
+    <!-- CSS Design Link -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- MathJax Configuration -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            }
+        };
+    </script>
+    <!-- Synchronous load to help headless PDF compilation render math equations in time -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation (Hidden in print) -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">π</div>
+                <div class="brand-title">
+                    <h1>Mathématiques</h1>
+                    <p>Devoir de Vacances</p>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item" data-week="w1">
+                    <button onclick="selectWeek('w1')">
+                        <span>📅 Semaine 1</span>
+                        <span class="week-progress-indicator" id="nav-progress-w1">0/8</span>
+                    </button>
+                </li>
+                <li class="nav-item" data-week="w2">
+                    <button onclick="selectWeek('w2')">
+                        <span>📅 Semaine 2</span>
+                        <span class="week-progress-indicator" id="nav-progress-w2">0/8</span>
+                    </button>
+                </li>
+                <li class="nav-item" data-week="w3">
+                    <button onclick="selectWeek('w3')">
+                        <span>📅 Semaine 3</span>
+                        <span class="week-progress-indicator" id="nav-progress-w3">0/8</span>
+                    </button>
+                </li>
+                <li class="nav-item" data-week="w4">
+                    <button onclick="selectWeek('w4')">
+                        <span>📅 Semaine 4</span>
+                        <span class="week-progress-indicator" id="nav-progress-w4">0/8</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <p style="font-size: 0.8rem; text-align: center; color: var(--text-muted);">
+                    Transition 4<sup>ème</sup> &rarr; 3<sup>ème</sup>
+                </p>
+                <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted); font-weight: 600; margin-top: 4px;">
+                    Carmel Saint Joseph
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Screen Header (Hidden in print) -->
+            <header class="top-header">
+                <div class="app-title">
+                    <h2>Devoir de vacances de Mathématiques</h2>
+                    <p>Transition 4<sup>ème</sup> vers la 3<sup>ème</sup> — Cahier interactif</p>
+                </div>
+                <div class="controls-group">
+                    <button class="btn" id="theme-toggle">🌙 Mode Sombre</button>
+                    <button class="btn btn-primary" id="print-btn">🖨️ Imprimer / PDF</button>
+                    <button class="btn" id="reset-btn" onclick="resetAllProgress()">🔄 Réinitialiser</button>
+                </div>
+            </header>
+
+            <!-- Print Header (Visible ONLY when printing) -->
+            <div class="print-header">
+                <h1>Cahier de Vacances de Mathématiques</h1>
+                <p>Transition de la 4<sup>ème</sup> vers la 3<sup>ème</sup> — Carmel Saint Joseph</p>
+                <p style="margin-top: 8px; font-size: 10pt; font-weight: bold;">Nom de l'élève : _______________________________ &nbsp;&nbsp;&nbsp;&nbsp; Classe : _________</p>
+            </div>
+
+            <!-- Stats/Dashboard Card (Hidden in print) -->
+            <div class="dashboard-card">
+                <div class="dashboard-stats">
+                    <div class="stats-title">Progression de votre travail</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <div class="stats-text">
+                        Exercices résolus : <span id="completed-count">0</span> sur <span id="total-count">0</span> (<span id="progress-percent">0%</span>)
+                    </div>
+                </div>
+                <div class="dashboard-badges">
+                    <div class="badge-card">
+                        <div class="badge-value" id="badge-score">0/32</div>
+                        <div class="badge-label">SCORE GLOBAL</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Exercises Container -->
+            <div id="exercises-container" class="tex2jax_process">
+                <!-- Injected dynamically by renderExercises() in app.js -->
+            </div>
+
+            <!-- Print Footer (Visible ONLY when printing) -->
+            <div class="print-footer">
+                <p>Cahier de vacances Mathématiques 4ème - 3ème | Carmel Saint Joseph</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS Files -->
+    <script src="exercises_data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

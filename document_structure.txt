@@ -1,0 +1,152 @@
+Document Structure:
+
+P: Carmel Saint Joseph  - Devoir de Vacances Maths 4ème
+
+P: Semaine 1
+
+P: [IMAGES: image1.png] N 1 On donne les nombres suivants :
+
+P: N 2
+
+P: [IMAGES: image2.png]
+
+P: N 3
+
+P: [IMAGES: image3.png]
+
+P: N 4
+
+P: [IMAGES: image4.png]
+
+P: N 5
+
+P: La maquette de maison représentée ci-dessous est composée d’un pavé droit de dimensions : AB = 30 cm, AE = 20cm et AD = 5 cm.
+
+P: [IMAGES: image5.png] Ce pavé est surmonté d’une pyramide de hauteur 6cm.
+
+P: Calculer le volume de cette maquette.
+
+P: N 6
+
+P: [IMAGES: image6.png]
+
+P: N 7
+
+P: [IMAGES: image7.png]
+
+P: N 8
+
+P: [IMAGES: image8.png]
+
+P: [IMAGES: image9.png]
+
+P: [IMAGES: image10.png]  [IMAGES: image11.png] Semaine 2
+
+P: N3 Factoriser les expressions suivantes:
+
+P: [IMAGES: image12.png]
+
+P: N 4
+
+P: [IMAGES: image13.png]
+
+P: N 5
+
+P: L’âge d’un père est le triple de celui de son fils.
+
+P: Quel est l’âge actuel du père sachant que dans 15 ans, il sera le double de celui de son fils.
+
+P: N 6
+
+P: On donne un cercle (C) de diamètre [AB] tel que AB = 6cm.
+
+P: (d) est une droite perpendiculaire à (AB) en B.
+
+P: 1) Faire une figure en vraies grandeurs.
+
+P: 2) Marquer sur (d) un point E tel que BE = AB.
+
+P: Tracer le segment [AE] qui coupe le cercle en F.
+
+P: 3) Démontrer que F est le milieu de [AE].
+
+P: 4) Calculer la longueur, arrondie au centième près, du segment [AE].
+
+P: 5) Calculer le périmètre, arrondi au centième près, du triangle AFB.
+
+P: 6) Démontrer que les triangles AFB et ABE sont semblables, puis écrire leur rapport de similitude.
+
+P: N7
+
+P: [IMAGES: image14.png]
+
+P: [IMAGES: image15.png]
+
+P: N8
+
+P: [IMAGES: image16.png]
+
+P: Semaine 3
+
+P: [IMAGES: image17.png]
+
+P: [IMAGES: image17.png]
+
+P: [IMAGES: image18.png]
+
+P: N 4
+
+P: [IMAGES: image19.png]
+
+P: N 5
+
+P: [IMAGES: image20.png]
+
+P: N 6
+
+P: [IMAGES: image21.png]
+
+P: N 7
+
+P: [IMAGES: image22.png]
+
+P: N 8
+
+P: [IMAGES: image23.png]
+
+P: [IMAGES: image24.png]
+
+P: Semaine 4
+
+P: [IMAGES: image25.png]
+
+P: [IMAGES: image25.png]
+
+P: N3
+
+P: [IMAGES: image26.png]
+
+P: N4
+
+P: [IMAGES: image27.png]
+
+P: N5
+
+P: [IMAGES: image28.png]
+
+P: N6
+
+P: [IMAGES: image29.png]
+
+P: N 7
+
+P: [IMAGES: image30.png]
+
+P: N 8
+
+P: [IMAGES: image31.png]
+
+P: [IMAGES: image32.png]
+
+P: [IMAGES: image33.png]
+
