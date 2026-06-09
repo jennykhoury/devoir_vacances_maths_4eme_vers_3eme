@@ -86,7 +86,19 @@ const ANSWER_KEYS = {
     "w4-ex8-1c": { value: "58", tolerance: ["58", "58 photos"] },
     "w4-ex8-2": { value: "101, 0.17, 17", tolerance: ["101, 0.17, 17", "101; 0.17; 17", "101/0.17/17"] },
     "w4-ex8-3a": { value: "16.45", tolerance: ["16.45", "16,45", "16.45 €", "16,45 €"] },
-    "w4-ex8-3b": { value: "Proposition 2 et Proposition 4", tolerance: ["2 et 4", "Proposition 2 et Proposition 4", "prop 2 et prop 4", "2, 4", "2;4"] }
+    "w4-ex8-3b": { value: "Proposition 2 et Proposition 4", tolerance: ["2 et 4", "Proposition 2 et Proposition 4", "prop 2 et prop 4", "2, 4", "2;4"] },
+
+    // Fiche Supplémentaire
+    "extra-ex1": { value: "17/24", tolerance: ["17/24", "0.71", "0,71"] },
+    "extra-ex2": { value: "5^3", tolerance: ["5^3", "125"] },
+    "extra-ex3": { value: "2.4*10^-2", tolerance: ["2.4*10^-2", "2,4*10^-2", "2.4*10^(-2)", "2,4*10^(-2)", "2.4x10^-2", "2,4x10^-2"] },
+    "extra-ex4": { value: "7x^2 - 7x + 7", tolerance: ["7x^2-7x+7", "7*x^2-7*x+7", "7x2-7x+7"] },
+    "extra-ex5": { value: "(2x - 3)(-3x - 7)", tolerance: ["(2x-3)(-3x-7)", "(2x-3)*(-3x-7)", "-(2x-3)(3x+7)", "-(2x-3)*(3x+7)", "(3-2x)(3x+7)"] },
+    "extra-ex6": { value: "4/3 et -5/2", tolerance: ["4/3 et -5/2", "-5/2 et 4/3", "4/3;-5/2", "-5/2;4/3", "1.33 et -2.5"] },
+    "extra-ex7": { value: "8", tolerance: ["8", "8 cm", "8cm"] },
+    "extra-ex8": { value: "3.8", tolerance: ["3.8", "3,8", "3.8 cm", "3,8 cm"] },
+    "extra-ex9": { value: "66", tolerance: ["66", "66 cm3", "66cm3", "66.0", "66,0"] },
+    "extra-ex10": { value: "1/2", tolerance: ["1/2", "0.5", "0,5", "50%"] }
 };
 
 // Global state
@@ -161,8 +173,7 @@ function updateProgress() {
     if (scoreBadge) scoreBadge.innerText = `${completedCount}/${totalExercises}`;
 
     // Update navigation sidebar indicators
-    for (let w = 1; w <= 4; w++) {
-        const weekKey = `w${w}`;
+    Object.keys(EXERCISES_DATA).forEach(weekKey => {
         const weekCardExercises = document.querySelectorAll(`.exercises-view[data-week="${weekKey}"] .exercise-card`);
         let weekCompleted = 0;
         weekCardExercises.forEach(card => {
@@ -170,11 +181,11 @@ function updateProgress() {
                 weekCompleted++;
             }
         });
-        const indicator = document.getElementById(`nav-progress-w${w}`);
+        const indicator = document.getElementById(`nav-progress-${weekKey}`);
         if (indicator) {
             indicator.innerText = `${weekCompleted}/${weekCardExercises.length}`;
         }
-    }
+    });
 }
 
 // Navigation between weeks
@@ -336,10 +347,9 @@ function renderExercises() {
 
     container.innerHTML = "";
 
-    for (let w = 1; w <= 4; w++) {
-        const weekKey = `w${w}`;
+    Object.keys(EXERCISES_DATA).forEach(weekKey => {
         const weekData = EXERCISES_DATA[weekKey];
-        if (!weekData) continue;
+        if (!weekData) return;
 
         const weekView = document.createElement("div");
         weekView.className = "exercises-view";
@@ -366,7 +376,7 @@ function renderExercises() {
                 `;
                 imageContainerHtml = `
                     <div class="exercise-image-container">
-                        <img src="/${exercise.image}" alt="Énoncé d'origine" loading="lazy">
+                        <img src="extracted_images/${exercise.image}" alt="Énoncé d'origine" loading="lazy">
                     </div>
                 `;
             }
@@ -394,6 +404,10 @@ function renderExercises() {
                 `;
             }
 
+            const hasCourse = !!exercise.course;
+            const hasHelp = !!exercise.help;
+            const hasCorrection = !!exercise.correction;
+
             card.innerHTML = `
                 <div class="exercise-header">
                     <div class="exercise-title">
@@ -409,18 +423,21 @@ function renderExercises() {
                     <button class="tab-btn active" data-tab="statement" onclick="switchTab(this)">
                         📝 Énoncé
                     </button>
+                    ${hasCourse ? `
                     <button class="tab-btn" data-tab="course" onclick="switchTab(this)">
                         📚 Cours
-                    </button>
+                    </button>` : ''}
+                    ${hasHelp ? `
                     <button class="tab-btn" data-tab="help" onclick="switchTab(this)">
                         💡 Aide
-                    </button>
+                    </button>` : ''}
                     <button class="tab-btn" data-tab="practice" onclick="switchTab(this)">
                         ✏️ S'entraîner
                     </button>
+                    ${hasCorrection ? `
                     <button class="tab-btn" data-tab="correction" onclick="switchTab(this)">
                         ✔️ Correction
-                    </button>
+                    </button>` : ''}
                 </div>
 
                 <!-- Statement Panel -->
@@ -433,18 +450,20 @@ function renderExercises() {
                 </div>
 
                 <!-- Course Panel -->
+                ${hasCourse ? `
                 <div class="tab-panel" id="course-panel">
                     <div class="course-reminder-content">
                         ${exercise.course}
                     </div>
-                </div>
+                </div>` : ''}
 
                 <!-- Help Panel -->
+                ${hasHelp ? `
                 <div class="tab-panel" id="help-panel">
                     <div class="help-content">
                         ${exercise.help}
                     </div>
-                </div>
+                </div>` : ''}
 
                 <!-- Practice Panel -->
                 <div class="tab-panel" id="practice-panel">
@@ -458,6 +477,7 @@ function renderExercises() {
                 </div>
 
                 <!-- Correction Panel -->
+                ${hasCorrection ? `
                 <div class="tab-panel" id="correction-panel">
                     <div class="correction-locked">
                         <p>La correction détaillée est verrouillée. Prenez le temps de chercher l'exercice avant de regarder la solution !</p>
@@ -466,14 +486,14 @@ function renderExercises() {
                     <div class="correction-content" style="display: none;">
                         ${exercise.correction}
                     </div>
-                </div>
+                </div>` : ''}
             `;
 
             weekView.appendChild(card);
         });
 
         container.appendChild(weekView);
-    }
+    });
 }
 
 // Reset all progress saved in localStorage

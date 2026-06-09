@@ -163,8 +163,10 @@ const EXERCISES_DATA = {
                     <div class="correction-step">
                         <strong>3.b) Nature de OMIN :</strong><br>
                         Les droites \\((IJ)\\) (qui est aussi la droite \\((IN)\\)) et \\((OM)\\) sont toutes deux perpendiculaires à d'autres droites. En effet, \\((IJ) \\perp (OA)\\) (par définition de la médiatrice) et \\((OM) \\perp (IL)\\) (car \\((OM)\\) est la médiatrice de \\([IL]\\)).<br>
-                        Dans un losange, les angles et alignements nous permettent de prouver que \\(OMIN\\) a des côtés parallèles et un angle droit, c'est un <strong>trapèze rectangle</strong> (ou parallélogramme selon les positions des points).
-                    </div>
+                        Dans le triangle JIL, on a O est le milieu de [JL] et N est le milieu de [IJ], d'après le théorème des milieux (ON)//(IL)<br>
+                        On déduit que (OM) est perpendiculaire à (AB) <br>
+                        Un quadrilatère ayant trois angles droits est un rectangle <br>
+                        Donc: OMIN est un rectangle</div>
                     <div class="correction-step">
                         <strong>3.c) Nature de AEBF :</strong><br>
                         \\([AB]\\) et \\([EF]\\) sont deux diamètres du cercle \\((C)\\). Leurs milieux respectifs coïncident avec le centre \\(O\\) du cercle. Un quadrilatère dont les diagonales se coupent en leur milieu est un parallélogramme. Comme ces diagonales sont de même longueur (ce sont des diamètres de longueur 8 cm), c'est un <strong>rectangle</strong>.
@@ -266,14 +268,14 @@ const EXERCISES_DATA = {
                     </div>
                     <div class="correction-step">
                         <strong>Étape 2 : Volume de la pyramide :</strong><br>
-                        La base de la pyramide est un rectangle de dimensions \\(30\\text{ cm} \\times 5\\text{ cm}\\).<br>
-                        \\[ Aire\\_base = 30 \\times 5 = 150\\text{ cm}^2 \\]
+                        La base de la pyramide est un rectangle de dimensions \\(30\\text{ cm} \\times 20\\text{ cm}\\).<br>
+                        \\[ Aire\\_base = 30 \\times 20 = 600\\text{ cm}^2 \\]
                         La hauteur de la pyramide est \\(h_{pyr} = 6\\) cm. Le volume est donc :<br>
-                        \\[ V_{pyr} = \\frac{1}{3} \\times Aire\\_base \\times h_{pyr} = \\frac{1}{3} \\times 150 \\times 6 = 300\\text{ cm}^3 \\]
+                        \\[ V_{pyr} = \\frac{1}{3} \\times Aire\\_base \\times h_{pyr} = \\frac{1}{3} \\times 600 \\times 6 = 1200\\text{ cm}^3 \\]
                     </div>
                     <div class="correction-step">
                         <strong>Étape 3 : Volume total :</strong><br>
-                        \\[ V_{total} = V_{pave} + V_{pyr} = 3000 + 300 = 3300\\text{ cm}^3 \\]
+                        \\[ V_{total} = V_{pave} + V_{pyr} = 3000 + 1200 = 4200\\text{ cm}^3 \\]
                     </div>
                 </div>`
             },
@@ -530,8 +532,7 @@ const EXERCISES_DATA = {
                         <strong>Calcul de F :</strong><br>
                         Simplification : \\(\\frac{-15}{-25} = \\frac{3}{5}\\) et le produit \\(\\frac{11}{12} \\times \\frac{-9}{33} = \\frac{11}{12} \\times \\frac{-3}{11} = -\\frac{3}{12} = -\\frac{1}{4}\\).<br>
                         \\[ F = \\frac{7}{12} + \\frac{3}{5} - \\left(-\\frac{1}{4}\\right) = \\frac{7}{12} + \\frac{3}{5} + \\frac{3}{12} = \\frac{10}{12} + \\frac{3}{5} = \\frac{5}{6} + \\frac{3}{5} = \\frac{25 + 18}{30} = \\frac{43}{30} \\]
-                        <em>Note: Si on garde \\(\\frac{11}{12} \\times \\frac{-9}{33} = -\\frac{11 \\times 9}{12 \\times 33} = -\\frac{99}{396} = -\\frac{1}{4}\\). Le résultat est bien \\(\\frac{67}{45}\\) ou \\(\\frac{43}{30}\\) selon l'expression exacte. Recalculons avec la valeur exacte de l'énoncé : \\(F = \\frac{7}{12} + \\frac{3}{5} - \\frac{11}{12} \\times \\frac{-9}{33} = \\frac{7}{12} + \\frac{3}{5} - (-\\frac{11 \\times 9}{12 \\times 33}) = \\frac{7}{12} + \\frac{3}{5} + \\frac{1}{4} = \\frac{7}{12} + \\frac{3}{12} + \\frac{3}{5} = \\frac{10}{12} + \\frac{3}{5} = \\frac{5}{6} + \\frac{3}{5} = \\frac{43}{30}\\). (Notre script acceptera les variantes d'arrondis).</em>
-                    </div>
+                      </div>
                     <div class="correction-step">
                         <strong>Calcul de G :</strong><br>
                         \\(G = \\frac{5}{16} - \\frac{1}{4} - \\frac{16}{26} \\times \\frac{-13}{64} = \\frac{5}{16} - \\frac{4}{16} - \\left(\\frac{16 \\times (-13)}{26 \\times 64}\\right) = \\frac{1}{16} - \\left(\\frac{16 \\times (-1)}{2 \\times 64}\\right) = \\frac{1}{16} - \\left(-\\frac{16}{128}\\right) = \\frac{1}{16} + \\frac{1}{8} = \\frac{1}{16} + \\frac{2}{16} = \\frac{3}{16}\\).
@@ -859,8 +860,7 @@ const EXERCISES_DATA = {
                 num: "N°7",
                 title: "Géométrie dans l'espace (Aire totale & Pourcentages - Boîtes de vin)",
                 image: "image14.png",
-                statement: `<p><strong>Partie A</strong></p>
-                <p>Une cartonnerie fabrique des boîtes pour des bouteilles de vin. Chaque boîte a la forme d'un parallélépipède rectangle (longueur : \\(50\\) cm, largeur : \\(15\\) cm, hauteur : \\(30\\) cm). L'unité de longueur est le cm ; l'unité d'aire est le cm².</p>
+                statement: `<p>Une cartonnerie fabrique des boîtes pour des bouteilles de vin. Chaque boîte a la forme d'un parallélépipède rectangle (longueur : \\(50\\) cm, largeur : \\(15\\) cm, hauteur : \\(30\\) cm). L'unité de longueur est le cm ; l'unité d'aire est le cm².</p>
                 <ol>
                     <li>
                         <ol type="a">
@@ -869,14 +869,7 @@ const EXERCISES_DATA = {
                         </ol>
                     </li>
                     <li>Sachant que pour les découpes il faut prévoir \\(20\\) % de plus de carton, combien de m² de carton seront nécessaires pour fabriquer \\(100\\) boîtes ?</li>
-                </ol>
-                <p><strong>Partie B</strong> (Voir image 15 pour l'énoncé complet)</p>
-                <p>Le fabricant compare deux tarifs pour expédier ses boîtes :</p>
-                <ul>
-                    <li><strong>Inter Transport</strong> : 30 € de fixe + 2 € par boîte.</li>
-                    <li><strong>Transport Express</strong> : 2,25 € par boîte.</li>
-                </ul>
-                <p>On note \\(x\\) le nombre de boîtes expédiées.</p>`,
+                </ol>`,
                 course: `<h4>Rappels de cours</h4>
                 <ul>
                     <li><strong>Aire d'un parallélépipède rectangle</strong> : Somme des aires de ses 6 faces rectangulaires (2 de dimensions \\(L \\times l\\), 2 de \\(L \\times h\\), 2 de \\(l \\times h\\)).</li>
@@ -884,8 +877,8 @@ const EXERCISES_DATA = {
                 </ul>`,
                 help: `<h4>Indices d'aide</h4>
                 <ul>
-                    <li><strong>Partie A - 1.b</strong> : Calculez l'aire : \\(2 \\times (50 \\times 15 + 50 \\times 30 + 15 \\times 30)\\).</li>
-                    <li><strong>Partie A - 2</strong> : Pour une boîte, il faut \\(5400 \\times 1,2 = 6480\\) cm² de carton. Multipliez par 100 pour obtenir l'aire de 100 boîtes en cm², puis convertissez en m² en divisant par 10 000.</li>
+                    <li><strong>Question 1.b</strong> : Calculez l'aire : \\(2 \\times (50 \\times 15 + 50 \\times 30 + 15 \\times 30)\\).</li>
+                    <li><strong>Question 2</strong> : Pour une boîte, il faut \\(5400 \\times 1,2 = 6480\\) cm² de carton. Multipliez par 100 pour obtenir l'aire de 100 boîtes en cm², puis convertissez en m² en divisant par 10 000.</li>
                 </ul>`,
                 inputs: [
                     { id: "w2-ex7-2", label: "Carton nécessaire pour 100 boîtes (m²)", placeholder: "Ex: 64.8" }
@@ -893,33 +886,22 @@ const EXERCISES_DATA = {
                 correction: `<h4>Correction détaillée</h4>
                 <div class="correction-steps">
                     <div class="correction-step">
-                        <strong>Partie A :</strong><br>
-                        1.a) Les faces sont toutes des <strong>rectangles</strong>. Leurs dimensions sont :<br>
+                        <strong>1.a) Nature des faces :</strong><br>
+                        Les faces sont toutes des <strong>rectangles</strong>. Leurs dimensions sont :<br>
                         - 2 faces de \\(50\\text{ cm} \\times 15\\text{ cm}\\) (base et couvercle)<br>
                         - 2 faces de \\(50\\text{ cm} \\times 30\\text{ cm}\\) (côtés principaux)<br>
                         - 2 faces de \\(15\\text{ cm} \\times 30\\text{ cm}\\) (côtés latéraux)<br>
-                        1.b) Aire totale :<br>
+                        <strong>1.b) Aire totale :</strong><br>
                         \\[ A = 2 \\times (50 \\times 15 + 50 \\times 30 + 15 \\times 30) = 2 \\times (750 + 1500 + 450) = 2 \\times 2700 = 5400\\text{ cm}^2 \\]
                     </div>
                     <div class="correction-step">
-                        <strong>Partie A - Question 2 :</strong><br>
+                        <strong>Question 2 :</strong><br>
                         Carton pour 1 boîte (avec 20% de surplus) :<br>
                         \\[ A_{1} = 5400 \\times 1,2 = 6480\\text{ cm}^2 \\]
                         Pour 100 boîtes :<br>
                         \\[ A_{100} = 6480 \\times 100 = 648\\,000\\text{ cm}^2 \\]
                         Conversion en m² (1 m² = 10 000 cm²) :<br>
                         \\[ A_{100\\text{ m}^2} = \\frac{648\\,000}{10\\,000} = 64,8\\text{ m}^2 \\]
-                    </div>
-                    <div class="correction-step">
-                        <strong>Partie B :</strong><br>
-                        1. Complétion du tableau :
-                        <table class="math-table">
-                            <tr><td>Nombre de boîtes</td><td>50</td><td>100</td><td>120</td><td>150</td><td>200</td></tr>
-                            <tr><td>Inter Transport (30 + 2x)</td><td>130 €</td><td>230 €</td><td>270 €</td><td>330 €</td><td>430 €</td></tr>
-                            <tr><td>Transport Express (2,25x)</td><td>112,5 €</td><td>225 €</td><td>270 €</td><td>337,5 €</td><td>450 €</td></tr>
-                        </table>
-                        2. Expressions en fonction de \\(x\\) :<br>
-                        \\[ P_1(x) = 2x + 30 \\quad\\text{et}\\quad P_2(x) = 2,25x \\]
                     </div>
                 </div>`
             },
@@ -1019,9 +1001,9 @@ const EXERCISES_DATA = {
                 image: "image17.png",
                 statement: `<p><strong>A)</strong> Sachant que \\(a = -5,2\\) ; \\(b = 14\\) ; \\(c = -\\frac{9}{7}\\) et \\(d = \\frac{3}{5}\\) ; calculer les deux expressions suivantes :</p>
                 <div class="math-formula">
-                    a) \\(bc - a\\) \\quad\\text{et}\\quad b) \\(\\frac{c}{3} + \\frac{1}{d}\\)
+                    \\[ a) \\quad bc - a \\quad\\text{et}\\quad b) \\quad \\frac{c}{3} + \\frac{1}{d} \\]
                 </div>
-                <p><strong>B)</strong> Écrire sous la forme d'une seule puissance (voir image 17 pour la liste complète) :</p>
+                <p><strong>B)</strong> Écrire sous la forme d'une seule puissance :</p>
                 <div class="math-formula">
                     \\[ 2^3 \\times 2^5 \\quad;\\quad (-3)^2 \\times 3^4 \\quad;\\quad 10^8 \\times 10^{-4} \\quad;\\quad \\frac{10^7}{10^3} \\quad;\\quad 10^3 \\times 10^4 \\times (10^2)^{-3} \\]
                 </div>
@@ -1406,7 +1388,7 @@ const EXERCISES_DATA = {
                 num: "N°8",
                 title: "Algorithmique & Probabilités (Jeu de hasard Scratch)",
                 image: "image23.png",
-                statement: `<p>On a créé un jeu de hasard à l'aide d'un logiciel de programmation. Le lutin dessine trois motifs côte à côte. Chaque motif est dessiné aléatoirement : soit une croix, soit un rectangle. Le joueur gagne s'il obtient trois motifs identiques. (Voir images 23 et 24 pour les scripts complets).</p>
+                statement: `<p>On a créé un jeu de hasard à l'aide d'un logiciel de programmation. Le lutin dessine trois motifs côte à côte. Chaque motif est dessiné aléatoirement : soit une croix, soit un rectangle. Le joueur gagne s'il obtient trois motifs identiques. (Voir image pour les scripts complets).</p>
                 <ol>
                     <li>En prenant pour échelle \\(1\\) cm pour \\(20\\) pas, représenter le motif obtenu par le bloc « rectangle » (côtés de 60 et 80 pas).</li>
                     <li>Quelle est la distance \\(d\\) entre les deux rectangles sur l'affichage, exprimée en pas ?</li>
@@ -1700,7 +1682,7 @@ const EXERCISES_DATA = {
                 num: "N°5",
                 title: "Géométrie plane (Tangente, triangle rectangle & centre de gravité)",
                 image: "image28.png",
-                statement: `<p>On considère un cercle \\((C)\\) de centre \\(O\\) et de rayon \\(3\\) cm et soit \\(A\\) un point de ce cercle. Sur la tangente \\((xy)\\) en \\(A\\) au cercle \\((C)\\) et de part et d'autre de \\(A\\), on prend deux points \\(B\\) et \\(D\\) tels que : \\(BA = AD = AO\\).</p>
+                statement: `<p>On considère un cercle \\((C)\\) de centre \\(O\\) et de rayon \\(3\\) cm et soit \\(A\\) un point de ce cercle. Sur la perpendiculaire en \\(A\\) à \\((OA)\\), et de part et d'autre de \\(A\\), on prend deux points \\(B\\) et \\(D\\) tels que : \\(BA = AD = AO\\).</p>
                 <ol>
                     <li>Faire une figure soignée.</li>
                     <li>Démontrer que \\(BOD\\) est un triangle rectangle isocèle, puis calculer l'aire de ce triangle.</li>
@@ -1885,13 +1867,13 @@ const EXERCISES_DATA = {
                 id: "w4-ex8",
                 num: "N°8",
                 title: "Algorithmique & Modélisation (Boutique en ligne - Tarifs photo)",
-                image: "image31.png",
+                image: "image32.png",
                 statement: `<p>Une boutique en ligne vend des photos et affiche les tarifs suivants :</p>
                 <ul>
                     <li>De 1 à 100 photos : \\(0,17\\) € par photo</li>
                     <li>Plus de 100 photos : \\(17\\) € pour les 100 premières et \\(0,13\\) € par photo supplémentaire</li>
                 </ul>
-                <p>On modélise cela avec un programme Scratch (voir image 32).</p>
+                <p>On modélise cela avec un programme Scratch (voir image).</p>
                 <ol>
                     <li>
                         <ol type="a">
@@ -1900,12 +1882,11 @@ const EXERCISES_DATA = {
                             <li>On dispose d'un budget de \\(10\\) €. Combien de photos peut-on commander au maximum ?</li>
                         </ol>
                     </li>
-                    <li>Par quelles valeurs peut-on compléter les instructions des lignes 3, 4 et 7 du programme Scratch ? (Voir image 32).</li>
+                    <li>Par quelles valeurs peut-on compléter les instructions des lignes 3, 4 et 7 du programme Scratch ? (Voir image).</li>
                     <li>En période de soldes, le site offre une réduction de \\(30\\) % pour toute commande supérieure à \\(20\\) €.
-                        <ol type="a">
-                            <li>Calculer le prix à payer pour \\(150\\) photos en période de soldes.</li>
-                            <li>Quelle proposition parmi les 4 affichées sur l'image 33 convient pour appliquer cette réduction dans le programme Scratch ?</li>
-                        </ol>
+                       
+                            Calculer le prix à payer pour \\(150\\) photos en période de soldes.
+                          
                     </li>
                 </ol>`,
                 course: `<h4>Rappels de cours</h4>
@@ -1955,13 +1936,141 @@ const EXERCISES_DATA = {
                         - Ligne 7 : mettre Prix à <span class="scratch-input">17</span> + Nb photos supplémentaires * 0.13
                     </div>
                     <div class="correction-step">
-                        <strong>3.a) Prix soldé pour 150 photos :</strong><br>
+                        <strong>3 Prix soldé pour 150 photos :</strong><br>
                         Le prix d'origine (23,50 €) est supérieur à 20 €. On applique la réduction de 30% :<br>
                         \\[ Prix\\_solde = 23,50 \\times (1 - 0,30) = 23,50 \\times 0,7 = 16,45\\text{ €} \\]
-                        <strong>3.b) Propositions Scratch valides :</strong><br>
-                        - La <strong>Proposition 2</strong> (\\(prix - prix \\times 0.3\\)) et la <strong>Proposition 4</strong> (\\(prix \\times 0.7\\)) conviennent toutes les deux car elles sont mathématiquement équivalentes.
-                    </div>
+                        </div>
                 </div>`
+            }
+        ]
+    },
+    "extra": {
+        title: "Fiche Supplémentaire de Révision (sans aide ni correction)",
+        exercises: [
+            {
+                id: "extra-ex1",
+                num: "N°1",
+                title: "Calcul fractionnaire & Priorités",
+                statement: `<p>Calculer de la façon la plus simple possible et donner le résultat sous la forme d'une fraction irréductible :</p>
+                <div class="math-formula">
+                    \\[ A = \\frac{5}{6} - \\frac{7}{12} \\times \\frac{3}{14} \\]
+                </div>`,
+                inputs: [
+                    { id: "extra-ex1", label: "Valeur de A", placeholder: "Ex: 17/24" }
+                ]
+            },
+            {
+                id: "extra-ex2",
+                num: "N°2",
+                title: "Puissances relatives et simplifications",
+                statement: `<p>Simplifier et écrire le nombre suivant sous la forme d'une seule puissance :</p>
+                <div class="math-formula">
+                    \\[ B = \\frac{5^4 \\times (5^{-2})^3}{5^{-5}} \\]
+                </div>`,
+                inputs: [
+                    { id: "extra-ex2", label: "Valeur de B", placeholder: "Ex: 5^3" }
+                ]
+            },
+            {
+                id: "extra-ex3",
+                num: "N°3",
+                title: "Calculs avec des puissances de 10 & Écriture scientifique",
+                statement: `<p>Calculer et exprimer le résultat sous sa forme scientifique :</p>
+                <div class="math-formula">
+                    \\[ C = \\frac{3 \\times 10^2 \\times 1,2 \\times 10^{-5}}{15 \\times 10^{-2}} \\]
+                </div>`,
+                inputs: [
+                    { id: "extra-ex3", label: "C (scientifique)", placeholder: "Ex: 2.4*10^-2" }
+                ]
+            },
+            {
+                id: "extra-ex4",
+                num: "N°4",
+                title: "Calcul littéral : Développement & Reduction",
+                statement: `<p>Développer, réduire et ordonner l'expression algébrique suivante :</p>
+                <div class="math-formula">
+                    \\[ D = (3x - 2)^2 - (2x + 1)(x - 3) \\]
+                </div>`,
+                inputs: [
+                    { id: "extra-ex4", label: "Expression développée D =", placeholder: "Ex: 7x^2 - 7x + 7" }
+                ]
+            },
+            {
+                id: "extra-ex5",
+                num: "N°5",
+                title: "Calcul littéral : Factorisation d'expression",
+                statement: `<p>Factoriser l'expression algébrique suivante au maximum :</p>
+                <div class="math-formula">
+                    \\[ E = (2x - 3)^2 - (2x - 3)(5x + 4) \\]
+                </div>`,
+                inputs: [
+                    { id: "extra-ex5", label: "Expression factorisée E =", placeholder: "Ex: (2x - 3)(-3x - 7)" }
+                ]
+            },
+            {
+                id: "extra-ex6",
+                num: "N°6",
+                title: "Algèbre : Équation produit nul",
+                statement: `<p>Résoudre l'équation produit nul suivante. Indiquer les solutions trouvées séparées par le mot "et" :</p>
+                <div class="math-formula">
+                    \\[ (3x - 4)(2x + 5) = 0 \\]
+                </div>`,
+                inputs: [
+                    { id: "extra-ex6", label: "Solutions de l'équation", placeholder: "Ex: 4/3 et -5/2" }
+                ]
+            },
+            {
+                id: "extra-ex7",
+                num: "N°7",
+                title: "Géométrie plane : Triangle rectangle inscrit dans un cercle",
+                statement: `<p>Soit \\([AB]\\) un segment de longueur \\(10\\) cm et \\(O\\) son milieu. On trace le cercle \\((C)\\) de diamètre \\([AB]\\). Soit \\(M\\) un point de ce cercle tel que \\(AM = 6\\) cm.</p>
+                <ol>
+                    <li>Préciser, en justifiant, la nature du triangle \\(AMB\\).</li>
+                    <li>Calculer la longueur \\(BM\\) en centimètres.</li>
+                </ol>`,
+                inputs: [
+                    { id: "extra-ex7", label: "Longueur BM (cm)", placeholder: "Ex: 8" }
+                ]
+            },
+            {
+                id: "extra-ex8",
+                num: "N°8",
+                title: "Géométrie plane : Théorème des milieux dans un triangle",
+                statement: `<p>Soit \\(ABC\\) un triangle. Le point \\(I\\) est le milieu de \\([AB]\\) et le point \\(J\\) est le milieu de \\([AC]\\). On donne \\(BC = 7,6\\) cm.</p>
+                <ol>
+                    <li>Démontrer que les droites \\((IJ)\\) et \\((BC)\\) sont parallèles.</li>
+                    <li>Calculer la longueur du segment \\([IJ]\\) en centimètres.</li>
+                </ol>`,
+                inputs: [
+                    { id: "extra-ex8", label: "Longueur IJ (cm)", placeholder: "Ex: 3.8" }
+                ]
+            },
+            {
+                id: "extra-ex9",
+                num: "N°9",
+                title: "Géométrie dans l'espace : Volume d'un cône de révolution",
+                statement: `<p>Calculer le volume d'un cône de révolution dont la base a un rayon de \\(3\\) cm et la hauteur mesure \\(7\\) cm. Arrondir le résultat à l'unité près (en cm³, prendre \\(\\pi \\approx 3,14159\\)).</p>`,
+                inputs: [
+                    { id: "extra-ex9", label: "Volume du cône (cm³)", placeholder: "Ex: 66" }
+                ]
+            },
+            {
+                id: "extra-ex10",
+                num: "N°10",
+                title: "Probabilités & Algorithmique (Analyse de script)",
+                statement: `<p>Dans un script Scratch, on définit un jeu où un joueur lance un dé classique à 6 faces. S'il obtient un nombre pair, son score augmente de 10 points, sinon rien ne se passe. On modélise ce jeu par :</p>
+                <div class="scratch-container">
+                    <div class="scratch-block scratch-event">quand <span class="scratch-input">drapeau vert</span> est cliqué</div><br>
+                    <div class="scratch-block scratch-data">mettre <span class="scratch-input">dé</span> à <span class="scratch-input block">nombre aléatoire entre 1 et 6</span></div><br>
+                    <div class="scratch-block scratch-control">si <span class="scratch-input block">(dé modulo 2) = 0</span> alors</div>
+                    <div class="scratch-loop-body">
+                        <div class="scratch-block scratch-looks">dire <span class="scratch-input">+10 points !</span> pendant <span class="scratch-input">2</span> secondes</div>
+                    </div>
+                </div>
+                <p>Déterminer la probabilité que le joueur obtienne les +10 points lors d'un lancer de dé.</p>`,
+                inputs: [
+                    { id: "extra-ex10", label: "Probabilité d'obtenir +10 points", placeholder: "Ex: 1/2" }
+                ]
             }
         ]
     }
