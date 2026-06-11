@@ -389,7 +389,7 @@ function renderExercises() {
                 `;
                 imageContainerHtml = `
                     <div class="exercise-image-container">
-                        <img src="extracted_images/${exercise.image}" alt="Énoncé d'origine" loading="lazy">
+                        <img src="/${exercise.image}" alt="Énoncé d'origine" loading="lazy">
                     </div>
                 `;
             }
