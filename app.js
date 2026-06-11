@@ -89,16 +89,29 @@ const ANSWER_KEYS = {
     "w4-ex8-3b": { value: "Proposition 2 et Proposition 4", tolerance: ["2 et 4", "Proposition 2 et Proposition 4", "prop 2 et prop 4", "2, 4", "2;4"] },
 
     // Fiche Supplémentaire
-    "extra-ex1": { value: "17/24", tolerance: ["17/24", "0.71", "0,71"] },
-    "extra-ex2": { value: "5^3", tolerance: ["5^3", "125"] },
-    "extra-ex3": { value: "2.4*10^-2", tolerance: ["2.4*10^-2", "2,4*10^-2", "2.4*10^(-2)", "2,4*10^(-2)", "2.4x10^-2", "2,4x10^-2"] },
-    "extra-ex4": { value: "7x^2 - 7x + 7", tolerance: ["7x^2-7x+7", "7*x^2-7*x+7", "7x2-7x+7"] },
-    "extra-ex5": { value: "(2x - 3)(-3x - 7)", tolerance: ["(2x-3)(-3x-7)", "(2x-3)*(-3x-7)", "-(2x-3)(3x+7)", "-(2x-3)*(3x+7)", "(3-2x)(3x+7)"] },
-    "extra-ex6": { value: "4/3 et -5/2", tolerance: ["4/3 et -5/2", "-5/2 et 4/3", "4/3;-5/2", "-5/2;4/3", "1.33 et -2.5"] },
-    "extra-ex7": { value: "8", tolerance: ["8", "8 cm", "8cm"] },
-    "extra-ex8": { value: "3.8", tolerance: ["3.8", "3,8", "3.8 cm", "3,8 cm"] },
-    "extra-ex9": { value: "66", tolerance: ["66", "66 cm3", "66cm3", "66.0", "66,0"] },
-    "extra-ex10": { value: "1/2", tolerance: ["1/2", "0.5", "0,5", "50%"] }
+    "extra-ex1-A": { value: "-9/32", tolerance: ["-9/32", "-0.28125", "-0,28125", "-0.28", "-0,28"] },
+    "extra-ex1-B": { value: "52/27", tolerance: ["52/27", "1.9259", "1,9259", "1.93", "1,93", "1.926", "1,926"] },
+    "extra-ex2-C": { value: "2^13", tolerance: ["2^13", "8192"] },
+    "extra-ex2-D": { value: "3^-13", tolerance: ["3^-13", "3^(-13)"] },
+    "extra-ex3-E": { value: "4*10^-6", tolerance: ["4*10^-6", "4x10^-6", "4*10^(-6)", "4e-6", "4.0e-6", "4,0e-6"] },
+    "extra-ex3-F": { value: "2*10^5", tolerance: ["2*10^5", "2x10^5", "2e5", "2.0e5", "2,0e5", "200000"] },
+    "extra-ex4-G": { value: "9x^2 + 3x + 28", tolerance: ["9x^2+3x+28", "9*x^2+3*x+28", "9x2+3x+28"] },
+    "extra-ex4-H": { value: "-2x^2 + 12x - 21", tolerance: ["-2x^2+12x-21", "-2*x^2+12*x-21", "-2x2+12x-21"] },
+    "extra-ex5-I": { value: "(3x - 5)(5x + 2)", tolerance: ["(3x-5)(5x+2)", "(3x-5)*(5x+2)", "(5x+2)(3x-5)", "(5x+2)*(3x-5)"] },
+    "extra-ex5-J": { value: "(2x - 3)(3 - 3x)", tolerance: ["(2x-3)(3-3x)", "(3-3x)(2x-3)", "3(2x-3)(1-x)", "3(1-x)(2x-3)", "-3(2x-3)(x-1)", "-3(x-1)(2x-3)"] },
+    "extra-ex6-1": { value: "3/2 et -1/7", tolerance: ["3/2 et -1/7", "-1/7 et 3/2", "3/2;-1/7", "-1/7;3/2", "1.5 et -1/7", "1,5 et -1/7", "1.5 et -0.14", "1,5 et -0,14"] },
+    "extra-ex6-2": { value: "5/3 et -1", tolerance: ["5/3 et -1", "-1 et 5/3", "5/3;-1", "-1;5/3", "1.67 et -1", "1,67 et -1"] },
+    "extra-ex7-BM": { value: "8", tolerance: ["8", "8 cm", "8cm"] },
+    "extra-ex7-MT": { value: "32/3", tolerance: ["32/3", "10.67", "10,67", "10.7", "10,7"] },
+    "extra-ex8-BC": { value: "10", tolerance: ["10", "10 cm", "10cm"] },
+    "extra-ex8-IJ": { value: "5", tolerance: ["5", "5 cm", "5cm"] },
+    "extra-ex8-AG": { value: "10/3", tolerance: ["10/3", "3.33", "3,33", "3.3", "3,3"] },
+    "extra-ex9-Vexact": { value: "2.4*pi", tolerance: ["2.4*pi", "2.4pi", "12/5*pi", "12/5pi", "2,4*pi", "2,4pi"] },
+    "extra-ex9-Vlitres": { value: "7540", tolerance: ["7540", "7540 L", "7540L", "7540 l", "7540l"] },
+    "extra-ex9-temps": { value: "25 min 8 s", tolerance: ["25 min 8 s", "25min8s", "25 min 8 secondes", "25min 8s", "25 m 8 s", "25m8s", "1508 s", "1508s", "1508"] },
+    "extra-ex10-A": { value: "3/10", tolerance: ["3/10", "0.3", "0,3", "30%"] },
+    "extra-ex10-B": { value: "3/10", tolerance: ["3/10", "0.3", "0,3", "30%"] },
+    "extra-ex10-Perdu": { value: "2/5", tolerance: ["2/5", "4/10", "0.4", "0,4", "40%"] }
 };
 
 // Global state
