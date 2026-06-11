@@ -1953,123 +1953,177 @@ const EXERCISES_DATA = {
                 title: "Calcul fractionnaire & Priorités",
                 statement: `<p>Calculer de la façon la plus simple possible et donner le résultat sous la forme d'une fraction irréductible :</p>
                 <div class="math-formula">
-                    \\[ A = \\frac{5}{6} - \\frac{7}{12} \\times \\frac{3}{14} \\]
+                    \\[ A = \\frac{\\frac{3}{4} - \\frac{5}{3} \\times \\frac{9}{10}}{\\frac{7}{6} + \\frac{2}{3} \\div \\frac{4}{9}} \\]
+                    \\[ B = 2 - \\frac{1 - \\frac{2}{3}}{3 + \\frac{1}{1 - \\frac{1}{3}}} \\]
                 </div>`,
                 inputs: [
-                    { id: "extra-ex1", label: "Valeur de A", placeholder: "Ex: 17/24" }
+                    { id: "extra-ex1-A", label: "Valeur de A", placeholder: "Ex: -9/32" },
+                    { id: "extra-ex1-B", label: "Valeur de B", placeholder: "Ex: 52/27" }
                 ]
             },
             {
                 id: "extra-ex2",
                 num: "N°2",
                 title: "Puissances relatives et simplifications",
-                statement: `<p>Simplifier et écrire le nombre suivant sous la forme d'une seule puissance :</p>
+                statement: `<p>Simplifier les expressions suivantes pour les écrire sous la forme d'une seule puissance (de la forme \\(a^n\\)) :</p>
                 <div class="math-formula">
-                    \\[ B = \\frac{5^4 \\times (5^{-2})^3}{5^{-5}} \\]
+                    \\[ C = \\frac{2^3 \\times (2^{-3})^{-2} \\times 8}{4^2 \\times 2^{-5}} \\]
+                    \\[ D = \\frac{27^{-2} \\times 3^5 \\times (9^2)^{-3}}{3^{-4} \\times 81} \\]
                 </div>`,
                 inputs: [
-                    { id: "extra-ex2", label: "Valeur de B", placeholder: "Ex: 5^3" }
+                    { id: "extra-ex2-C", label: "C sous forme 2^n", placeholder: "Ex: 2^13" },
+                    { id: "extra-ex2-D", label: "D sous forme 3^n", placeholder: "Ex: 3^-13" }
                 ]
             },
             {
                 id: "extra-ex3",
                 num: "N°3",
                 title: "Calculs avec des puissances de 10 & Écriture scientifique",
-                statement: `<p>Calculer et exprimer le résultat sous sa forme scientifique :</p>
+                statement: `<p>Calculer les expressions suivantes et donner le résultat sous sa forme scientifique :</p>
                 <div class="math-formula">
-                    \\[ C = \\frac{3 \\times 10^2 \\times 1,2 \\times 10^{-5}}{15 \\times 10^{-2}} \\]
+                    \\[ E = \\frac{0,24 \\times 10^{-3} \\times 15 \\times (10^2)^{-4}}{0,9 \\times 10^{-5}} \\]
+                    \\[ F = \\frac{14 \\times 10^3 \\times 0,05 \\times 10^{-2}}{350 \\times 10^{-7}} \\]
                 </div>`,
                 inputs: [
-                    { id: "extra-ex3", label: "C (scientifique)", placeholder: "Ex: 2.4*10^-2" }
+                    { id: "extra-ex3-E", label: "E (scientifique)", placeholder: "Ex: 4*10^-6" },
+                    { id: "extra-ex3-F", label: "F (scientifique)", placeholder: "Ex: 2*10^5" }
                 ]
             },
             {
                 id: "extra-ex4",
                 num: "N°4",
-                title: "Calcul littéral : Développement & Reduction",
-                statement: `<p>Développer, réduire et ordonner l'expression algébrique suivante :</p>
+                title: "Calcul littéral : Développement & Réduction",
+                statement: `<p>Développer, réduire et ordonner les expressions algébriques suivantes :</p>
                 <div class="math-formula">
-                    \\[ D = (3x - 2)^2 - (2x + 1)(x - 3) \\]
+                    \\[ G = (4x - 3)^2 - 3(2x + 1)(x - 5) - (x - 2)(x + 2) \\]
+                    \\[ H = 2x(3x - 4) - (2x - 5)^2 - 4(x + 1)(x - 1) \\]
                 </div>`,
                 inputs: [
-                    { id: "extra-ex4", label: "Expression développée D =", placeholder: "Ex: 7x^2 - 7x + 7" }
+                    { id: "extra-ex4-G", label: "Expression G =", placeholder: "Ex: 9x^2 + 3x + 28" },
+                    { id: "extra-ex4-H", label: "Expression H =", placeholder: "Ex: -2x^2 + 12x - 21" }
                 ]
             },
             {
                 id: "extra-ex5",
                 num: "N°5",
                 title: "Calcul littéral : Factorisation d'expression",
-                statement: `<p>Factoriser l'expression algébrique suivante au maximum :</p>
+                statement: `<p>Factoriser les expressions algébriques suivantes au maximum :</p>
                 <div class="math-formula">
-                    \\[ E = (2x - 3)^2 - (2x - 3)(5x + 4) \\]
+                    \\[ I = (3x - 5)^2 - (5 - 3x)(2x + 7) \\]
+                    \\[ J = (2x - 3)(x + 4) - (4x - 6)(3x - 1) + (4x^2 - 12x + 9) \\]
                 </div>`,
                 inputs: [
-                    { id: "extra-ex5", label: "Expression factorisée E =", placeholder: "Ex: (2x - 3)(-3x - 7)" }
+                    { id: "extra-ex5-I", label: "Expression I factorisée", placeholder: "Ex: (3x - 5)(5x + 2)" },
+                    { id: "extra-ex5-J", label: "Expression J factorisée", placeholder: "Ex: (2x - 3)(3 - 3x)" }
                 ]
             },
             {
                 id: "extra-ex6",
                 num: "N°6",
                 title: "Algèbre : Équation produit nul",
-                statement: `<p>Résoudre l'équation produit nul suivante. Indiquer les solutions trouvées séparées par le mot "et" :</p>
+                statement: `<p>Résoudre les équations suivantes:</p>
                 <div class="math-formula">
-                    \\[ (3x - 4)(2x + 5) = 0 \\]
+                    \\[ 1) \\quad (2x - 3)(5x + 4) + (2x - 3)^2 = 0 \\]
+                    \\[ 2) \\quad (3x - 1)^2 - 16 = 0 \\]
                 </div>`,
                 inputs: [
-                    { id: "extra-ex6", label: "Solutions de l'équation", placeholder: "Ex: 4/3 et -5/2" }
+                    { id: "extra-ex6-1", label: "Solutions de l'équation 1)", placeholder: "Ex: 3/2 et -1/7" },
+                    { id: "extra-ex6-2", label: "Solutions de l'équation 2)", placeholder: "Ex: 5/3 et -1" }
                 ]
             },
             {
                 id: "extra-ex7",
                 num: "N°7",
-                title: "Géométrie plane : Triangle rectangle inscrit dans un cercle",
+                title: "Géométrie plane : Triangle rectangle, tangente & triangles semblables",
                 statement: `<p>Soit \\([AB]\\) un segment de longueur \\(10\\) cm et \\(O\\) son milieu. On trace le cercle \\((C)\\) de diamètre \\([AB]\\). Soit \\(M\\) un point de ce cercle tel que \\(AM = 6\\) cm.</p>
                 <ol>
-                    <li>Préciser, en justifiant, la nature du triangle \\(AMB\\).</li>
-                    <li>Calculer la longueur \\(BM\\) en centimètres.</li>
+                    <li>Démontrer que le triangle \\(AMB\\) est rectangle en \\(M\\) et calculer la longueur \\(BM\\).</li>
+                    <li>La perpendiculaire à \\((AB)\\) en \\(B\\) coupe la droite \\((AM)\\) en \\(T\\).
+                        <ol type="a">
+                            
+                            <li>Démontrer que les triangles \\(AMB\\) et \\(MBT\\) sont semblables.</li>
+                            <li>En déduire la relation \\(MB^2 = MA \\times MT\\), puis calculer la longueur du segment \\([MT]\\).</li>
+                        </ol>
+                    </li>
                 </ol>`,
                 inputs: [
-                    { id: "extra-ex7", label: "Longueur BM (cm)", placeholder: "Ex: 8" }
+                    { id: "extra-ex7-BM", label: "Longueur BM (cm)", placeholder: "Ex: 8" },
+                    { id: "extra-ex7-MT", label: "Longueur MT (cm)", placeholder: "Ex: 32/3" }
                 ]
             },
             {
                 id: "extra-ex8",
                 num: "N°8",
-                title: "Géométrie plane : Théorème des milieux dans un triangle",
-                statement: `<p>Soit \\(ABC\\) un triangle. Le point \\(I\\) est le milieu de \\([AB]\\) et le point \\(J\\) est le milieu de \\([AC]\\). On donne \\(BC = 7,6\\) cm.</p>
+                title: "Géométrie plane : Théorème des milieux & centre de gravité",
+                statement: `<p>Soit \\(ABC\\) un triangle rectangle en \\(A\\) tel que \\(AB = 6\\) cm et \\(AC = 8\\) cm.</p>
                 <ol>
-                    <li>Démontrer que les droites \\((IJ)\\) et \\((BC)\\) sont parallèles.</li>
-                    <li>Calculer la longueur du segment \\([IJ]\\) en centimètres.</li>
+                    <li>Calculer la longueur \\(BC\\).</li>
+                    <li>Le point \\(I\\) est le milieu de \\([AB]\\) et le point \\(J\\) est le milieu de \\([AC]\\).
+                        <ol type="a">
+                            <li>Calculer la longueur \\(IJ\\) en justifiant.</li>
+                            <li>Quelle est la position relative des droites \\((IJ)\\) et \\((BC)\\) ?</li>
+                        </ol>
+                    </li>
+                    <li>Les droites \\((BJ)\\) et \\((CI)\\) se coupent en \\(G\\).
+                        <ol type="a">
+                            <li>Que représente le point \\(G\\) pour le triangle \\(ABC\\) ?</li>
+                            <li>Soit \\(K\\) le milieu de \\([BC]\\). Calculer la longueur de la médiane \\([AK]\\), puis en déduire la longueur \\(AG\\).</li>
+                        </ol>
+                    </li>
                 </ol>`,
                 inputs: [
-                    { id: "extra-ex8", label: "Longueur IJ (cm)", placeholder: "Ex: 3.8" }
+                    { id: "extra-ex8-BC", label: "Longueur BC (cm)", placeholder: "Ex: 10" },
+                    { id: "extra-ex8-IJ", label: "Longueur IJ (cm)", placeholder: "Ex: 5" },
+                    { id: "extra-ex8-AG", label: "Longueur AG (cm)", placeholder: "Ex: 10/3" }
                 ]
             },
             {
                 id: "extra-ex9",
                 num: "N°9",
-                title: "Géométrie dans l'espace : Volume d'un cône de révolution",
-                statement: `<p>Calculer le volume d'un cône de révolution dont la base a un rayon de \\(3\\) cm et la hauteur mesure \\(7\\) cm. Arrondir le résultat à l'unité près (en cm³, prendre \\(\\pi \\approx 3,14159\\)).</p>`,
+                title: "Géométrie dans l'espace : Cône, cylindre, débit et temps de remplissage",
+                statement: `<p>Un réservoir d'eau est composé d'une partie cylindrique de rayon \\(R = 1\\) m et de hauteur \\(H = 2\\) m, surmontée d'un cône de révolution de même rayon \\(R = 1\\) m et de hauteur \\(h = 1,2\\) m.</p>
+                <ol>
+                    <li>Calculer le volume exact du réservoir (en m³, en fonction de \\(\\pi\\)).</li>
+                    <li>En déduire sa capacité arrondie au litre près (en prenant \\(\\pi \\approx 3,14159\\) et \\(1\\text{ dm}^3 = 1\\text{ L}\\)).</li>
+                    <li>On remplit ce réservoir initialement vide à l'aide d'une pompe ayant un débit de \\(5\\) litres par seconde. Calculer le temps nécessaire pour le remplir complètement. Exprimer ce temps en minutes et secondes.</li>
+                </ol>`,
                 inputs: [
-                    { id: "extra-ex9", label: "Volume du cône (cm³)", placeholder: "Ex: 66" }
+                    { id: "extra-ex9-Vexact", label: "Volume exact (m³)", placeholder: "Ex: 2.4*pi" },
+                    { id: "extra-ex9-Vlitres", label: "Capacité en litres (L)", placeholder: "Ex: 7540" },
+                    { id: "extra-ex9-temps", label: "Temps (min et s)", placeholder: "Ex: 25 min 8 s" }
                 ]
             },
             {
                 id: "extra-ex10",
                 num: "N°10",
                 title: "Probabilités & Algorithmique (Analyse de script)",
-                statement: `<p>Dans un script Scratch, on définit un jeu où un joueur lance un dé classique à 6 faces. S'il obtient un nombre pair, son score augmente de 10 points, sinon rien ne se passe. On modélise ce jeu par :</p>
+                statement: `<p>On considère le script Scratch suivant où la variable <code>Nombre</code> est choisie de manière aléatoire parmi les nombres entiers de <code>1</code> à <code>20</code> (inclus) :</p>
                 <div class="scratch-container">
                     <div class="scratch-block scratch-event">quand <span class="scratch-input">drapeau vert</span> est cliqué</div><br>
-                    <div class="scratch-block scratch-data">mettre <span class="scratch-input">dé</span> à <span class="scratch-input block">nombre aléatoire entre 1 et 6</span></div><br>
-                    <div class="scratch-block scratch-control">si <span class="scratch-input block">(dé modulo 2) = 0</span> alors</div>
+                    <div class="scratch-block scratch-data">mettre <span class="scratch-input">Nombre</span> à <span class="scratch-input block">nombre aléatoire entre 1 et 20</span></div><br>
+                    <div class="scratch-block scratch-control">si <span class="scratch-input block">(Nombre modulo 3) = 0</span> alors</div>
                     <div class="scratch-loop-body">
-                        <div class="scratch-block scratch-looks">dire <span class="scratch-input">+10 points !</span> pendant <span class="scratch-input">2</span> secondes</div>
+                        <div class="scratch-block scratch-looks">dire <span class="scratch-input">Gagné Niveau A</span></div>
+                    </div>
+                    <div class="scratch-block scratch-control">sinon si <span class="scratch-input block">Nombre est un diviseur de 20</span> alors</div>
+                    <div class="scratch-loop-body">
+                        <div class="scratch-block scratch-looks">dire <span class="scratch-input">Gagné Niveau B</span></div>
+                    </div>
+                    <div class="scratch-block scratch-control">sinon</div>
+                    <div class="scratch-loop-body">
+                        <div class="scratch-block scratch-looks">dire <span class="scratch-input">Perdu</span></div>
                     </div>
                 </div>
-                <p>Déterminer la probabilité que le joueur obtienne les +10 points lors d'un lancer de dé.</p>`,
+                <p>Déterminer la probabilité de chacun des événements suivants sous la forme d'une fraction irréductible :</p>
+                <ol>
+                    <li>Le programme affiche "Gagné Niveau A".</li>
+                    <li>Le programme affiche "Gagné Niveau B".</li>
+                    <li>Le programme affiche "Perdu".</li>
+                </ol>`,
                 inputs: [
-                    { id: "extra-ex10", label: "Probabilité d'obtenir +10 points", placeholder: "Ex: 1/2" }
+                    { id: "extra-ex10-A", label: "Probabilité Niveau A", placeholder: "Ex: 3/10" },
+                    { id: "extra-ex10-B", label: "Probabilité Niveau B", placeholder: "Ex: 3/10" },
+                    { id: "extra-ex10-Perdu", label: "Probabilité Perdu", placeholder: "Ex: 2/5" }
                 ]
             }
         ]
